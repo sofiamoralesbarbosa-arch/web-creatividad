@@ -584,28 +584,56 @@
         let brainstormTimer = null;
         let brainstormSeconds = 30;
 
-        // Sample Data for Videos
+        // Sample Data for Videos (Updated)
         let videoList = [
             {
                 id: "v1",
-                title: "¿Cómo pensar de manera crítica en la era digital?",
-                desc: "Entrevista con la Dra. Elena Gómez sobre cómo analizar información en la web sin caer en sesgos.",
-                youtubeId: "dItUGF8GdTw",
+                title: "Entrevista con docente de español",
+                desc: "Mira o escucha lo que un docente del área de español piensa al respecto de la creatividad y pensamiento crítico.",
+                youtubeId: "S-G769hv2pM",
                 category: "Pensamiento Crítico"
             },
             {
                 id: "v2",
-                title: "Técnicas de Creatividad para resolver problemas complejos",
-                desc: "El diseñador Marco Silva nos explica la técnica del pensamiento lateral y la asociación libre.",
-                youtubeId: "Y6ljFaKRTrI",
-                category: "Creatividad"
+                title: "Entrevista con docente de filosofía",
+                desc: "Mira o escucha lo que un docente del área de filosofía piensa al respecto de la creatividad y pensamiento crítico.",
+                youtubeId: "gB0wrT4EoBE",
+                category: "Pensamiento Crítico"
             },
             {
                 id: "v3",
-                title: "Superando el bloqueo creativo en jóvenes",
-                desc: "Consejos prácticos para generar ideas cuando sientes que la mente está en blanco.",
-                youtubeId: "983S4dJ1O38",
+                title: "Entrevista con docente de matemáticas",
+                desc: "Mira o escucha lo que un docente del área de matemáticas piensa al respecto de la creatividad y pensamiento crítico.",
+                youtubeId: "n3ZGDziDZNc",
                 category: "Innovación"
+            },
+            {
+                id: "v4",
+                title: "Entrevista con docente de ciencias",
+                desc: "Mira o escucha lo que un docente del área de ciencias piensa al respecto de la creatividad y pensamiento crítico.",
+                youtubeId: "fBHGNpwP3HE",
+                category: "Creatividad"
+            },
+            {
+                id: "v5",
+                title: "Entrevista o Recurso Adicional 1",
+                desc: "Material complementario sobre procesos creativos e innovación.",
+                youtubeId: "oL_mHK5v2OU",
+                category: "Innovación"
+            },
+            {
+                id: "v6",
+                title: "¿Por qué tenemos imaginación?",
+                desc: "Explora cómo funciona la imaginación y su relación con la mente creativa.",
+                youtubeId: "lBVhLcfoahw",
+                category: "Creatividad"
+            },
+            {
+                id: "v7",
+                title: "Entrevista o Recurso Adicional 3",
+                desc: "Estrategias prácticas de pensamiento y resolución de problemas.",
+                youtubeId: "i-htv81L04g",
+                category: "Pensamiento Crítico"
             }
         ];
 
@@ -915,7 +943,6 @@
             const desc = document.getElementById('mixerDescription').value.trim();
             if (!desc) return;
 
-            // Simple notification response
             const btn = event.target;
             const originalText = btn.innerHTML;
             btn.innerHTML = `<i class="fa-solid fa-check mr-2"></i> ¡Idea Guardada con Éxito!`;
@@ -969,7 +996,6 @@
         }
 
         function filterTips(cat) {
-            // Update filter buttons styles
             const buttons = document.querySelectorAll('#tipCategoryFilters button');
             buttons.forEach(btn => {
                 btn.className = "px-4 py-1.5 rounded-full text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700";
